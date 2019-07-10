@@ -54,12 +54,30 @@ section{
     line-height: 145%;
 }
 
+/*--------------icons----------------*/
+
 
 .icon-big{
     display: block;
     font-size: 350%;
     color: #e67e22;
     margin-bottom: 10px;
+}
+
+.icon-small{
+    display: inline-block;
+    width: 35px;
+    text-align: center;
+    color: #e67e22;
+    font-size: 120%;
+    margin-right: 10px;
+
+    /*secrets to align icons*/
+
+    line-height: 120%;
+    vertical-align: middle;
+    margin-top: -5px;
+
 }
 
 /*-----------HEADINGS----------------*/
@@ -99,7 +117,23 @@ h2::after{
     margin: 30px auto 0 auto;
 }
 
-/*-------------BUTTONS---------------------*/
+/*----------------LINKS---------------------*/
+
+a:link,
+a:visited{
+    color: #e67e22;
+    text-decoration: none;
+    border-bottom: 1px solid #e67e22;
+    padding-bottom: 2px;
+    transition: color .5s,border .5s;
+}
+a:hover,
+a:active{
+    color: #555;
+    border-bottom: 1px solid transparent;
+}
+
+/*---------------BUTTONS---------------------*/
 
 .btn:link,
 .btn:visited{
@@ -149,6 +183,7 @@ header{
     height: 100vh;
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
 }
 .hero-text-box{
     position: absolute;
@@ -237,7 +272,7 @@ HOW IT WORKS
 -------------------------------------*/
 
 .section-steps{
-    background-color: #f3f3f3;
+    background-color: #f4f4f4;
 }
 .steps-box:first-child{
     text-align: right;
@@ -271,8 +306,26 @@ HOW IT WORKS
     font-size: 150%;
     margin-right: 25px;
 }
+.btn-app:link,
+.btn-app:visited{
+    border: 0;
+}
+
 .btn-app img{
     height: 50px;
     width: auto;
     margin-right: 10px;
+}
+
+/*----------------------------------->
+CITIES
+-------------------------------------*/
+
+.box img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+.city-feature{
+    margin-bottom: 5px;
 }
